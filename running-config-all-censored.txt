@@ -1,0 +1,602 @@
+------------------------------26/11/2020 19:40:05------------------------------
+
+
+
+
+
+
+
+
+
+
+
+------------------------------lab-l3-switch-1:------------------------------
+Building configuration...
+
+Current configuration : 3265 bytes
+!
+! Last configuration change at 18:39:33 UTC Thu Nov 26 2020 by haakonlab
+! NVRAM config last updated at 18:29:31 UTC Thu Nov 26 2020 by haakonlab
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname TRD-KONT
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+!
+no aaa new-model
+system mtu routing 1500
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface Loopback1
+ ip address 23.23.23.23 255.255.255.255
+!
+interface Loopback69
+ ip address 69.69.69.69 255.255.255.255
+!
+interface FastEthernet0/1
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 555,666
+ switchport mode trunk
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface FastEthernet0/25
+!
+interface FastEthernet0/26
+!
+interface FastEthernet0/27
+!
+interface FastEthernet0/28
+!
+interface FastEthernet0/29
+!
+interface FastEthernet0/30
+!
+interface FastEthernet0/31
+!
+interface FastEthernet0/32
+!
+interface FastEthernet0/33
+!
+interface FastEthernet0/34
+!
+interface FastEthernet0/35
+!
+interface FastEthernet0/36
+!
+interface FastEthernet0/37
+!
+interface FastEthernet0/38
+!
+interface FastEthernet0/39
+!
+interface FastEthernet0/40
+!
+interface FastEthernet0/41
+!
+interface FastEthernet0/42
+!
+interface FastEthernet0/43
+!
+interface FastEthernet0/44
+!
+interface FastEthernet0/45
+!
+interface FastEthernet0/46
+!
+interface FastEthernet0/47
+!
+interface FastEthernet0/48
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan10
+ ip address 10.0.0.1 255.255.255.128
+!
+interface Vlan20
+ ip address 10.0.1.1 255.255.255.192
+!
+interface Vlan30
+ ip address 10.0.1.65 255.255.255.192
+!
+interface Vlan40
+ ip address 10.0.1.193 255.255.255.240
+!
+interface Vlan555
+ ip address 83.118.72.2 255.255.255.240
+!
+interface Vlan666
+ ip address 192.168.66.20 255.255.255.0
+!
+router ospf 1
+ router-id 1.1.1.1
+ log-adjacency-changes
+ network 83.118.72.0 0.0.0.15 area 0
+ network 0.0.0.0 255.255.255.255 area 0
+!
+ip default-gateway 192.168.66.1
+ip classless
+ip route 192.168.0.0 255.255.0.0 192.168.66.1
+no ip http server
+no ip http secure-server
+!
+!
+!
+line con 0
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+ntp clock-period 36029072
+ntp server 192.168.66.1
+end
+
+ 
+ 
+
+
+------------------------------lab-l3-switch-2:------------------------------
+Building configuration...
+
+Current configuration : 3113 bytes
+!
+! Last configuration change at 18:38:00 UTC Thu Nov 26 2020 by haakonlab
+! NVRAM config last updated at 18:10:36 UTC Thu Nov 26 2020 by haakonlab
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname OSL-KONT
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+!
+no aaa new-model
+system mtu routing 1500
+ip routing
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface Loopback0
+ ip address 10.0.6.1 255.255.255.0
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport nonegotiate
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface FastEthernet0/25
+!
+interface FastEthernet0/26
+!
+interface FastEthernet0/27
+!
+interface FastEthernet0/28
+!
+interface FastEthernet0/29
+!
+interface FastEthernet0/30
+!
+interface FastEthernet0/31
+!
+interface FastEthernet0/32
+!
+interface FastEthernet0/33
+!
+interface FastEthernet0/34
+!
+interface FastEthernet0/35
+!
+interface FastEthernet0/36
+!
+interface FastEthernet0/37
+!
+interface FastEthernet0/38
+!
+interface FastEthernet0/39
+!
+interface FastEthernet0/40
+!
+interface FastEthernet0/41
+!
+interface FastEthernet0/42
+!
+interface FastEthernet0/43
+!
+interface FastEthernet0/44
+!
+interface FastEthernet0/45
+!
+interface FastEthernet0/46
+!
+interface FastEthernet0/47
+!
+interface FastEthernet0/48
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface Vlan1
+ no ip address
+!
+interface Vlan555
+ ip address 83.118.72.3 255.255.255.240
+!
+interface Vlan666
+ description mgmt
+ ip address 192.168.66.21 255.255.255.0
+!
+interface Vlan1111
+ description THANK YOU FOR READING THIS <3
+ no ip address
+!
+router ospf 10
+ log-adjacency-changes
+ network 10.0.6.0 0.0.1.255 area 0
+!
+router ospf 1
+ router-id 2.2.2.2
+ log-adjacency-changes
+ network 10.0.2.0 0.0.1.255 area 0
+ network 10.0.0.0 0.0.255.255 area 0
+ network 83.118.72.0 0.0.0.15 area 0
+!
+ip default-gateway 192.168.66.1
+ip classless
+ip route 192.168.0.0 255.255.0.0 192.168.66.1
+no ip http server
+no ip http secure-server
+!
+!
+!
+line con 0
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+ntp clock-period 36029034
+ntp server 192.168.66.20
+end
+
+ 
+ 
+
+
+------------------------------lab-l3-switch-3:------------------------------
+Building configuration...
+
+Current configuration : 2831 bytes
+!
+! Last configuration change at 18:38:00 UTC Thu Nov 26 2020 by haakonlab
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname BGO-KONT
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+!
+no aaa new-model
+system mtu routing 1500
+ip routing
+no ip domain-lookup
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface FastEthernet0/25
+!
+interface FastEthernet0/26
+!
+interface FastEthernet0/27
+!
+interface FastEthernet0/28
+!
+interface FastEthernet0/29
+!
+interface FastEthernet0/30
+!
+interface FastEthernet0/31
+!
+interface FastEthernet0/32
+!
+interface FastEthernet0/33
+!
+interface FastEthernet0/34
+!
+interface FastEthernet0/35
+!
+interface FastEthernet0/36
+!
+interface FastEthernet0/37
+!
+interface FastEthernet0/38
+!
+interface FastEthernet0/39
+!
+interface FastEthernet0/40
+!
+interface FastEthernet0/41
+!
+interface FastEthernet0/42
+!
+interface FastEthernet0/43
+!
+interface FastEthernet0/44
+!
+interface FastEthernet0/45
+!
+interface FastEthernet0/46
+!
+interface FastEthernet0/47
+!
+interface FastEthernet0/48
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan555
+ ip address 83.118.72.4 255.255.255.240
+!
+interface Vlan666
+ ip address 192.168.66.22 255.255.255.0
+!
+router ospf 1
+ router-id 3.3.3.3
+ log-adjacency-changes
+ network 10.0.0.0 0.255.255.255 area 0
+ network 83.118.72.0 0.0.0.15 area 0
+!
+ip default-gateway 192.168.66.1
+ip classless
+ip route 192.168.0.0 255.255.0.0 192.168.66.1
+no ip http server
+no ip http secure-server
+!
+!
+!
+line con 0
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+ntp clock-period 36029229
+ntp server 192.168.66.21
+end
+
+ 
+ 
