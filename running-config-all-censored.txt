@@ -1,4 +1,4 @@
-------------------------------26/11/2020 19:40:05------------------------------
+------------------------------15/12/2020 23:52:00------------------------------
 
 
 
@@ -13,10 +13,9 @@
 ------------------------------lab-l3-switch-1:------------------------------
 Building configuration...
 
-Current configuration : 3265 bytes
+Current configuration : 3164 bytes
 !
-! Last configuration change at 18:39:33 UTC Thu Nov 26 2020 by haakonlab
-! NVRAM config last updated at 18:29:31 UTC Thu Nov 26 2020 by haakonlab
+! No configuration change since last restart
 !
 version 12.2
 no service pad
@@ -207,7 +206,7 @@ line vty 5 15
  login local
  transport input ssh
 !
-ntp clock-period 36029072
+ntp clock-period 36029104
 ntp server 192.168.66.1
 end
 
@@ -218,10 +217,9 @@ end
 ------------------------------lab-l3-switch-2:------------------------------
 Building configuration...
 
-Current configuration : 3113 bytes
+Current configuration : 3012 bytes
 !
-! Last configuration change at 18:38:00 UTC Thu Nov 26 2020 by haakonlab
-! NVRAM config last updated at 18:10:36 UTC Thu Nov 26 2020 by haakonlab
+! No configuration change since last restart
 !
 version 12.2
 no service pad
@@ -418,9 +416,9 @@ end
 ------------------------------lab-l3-switch-3:------------------------------
 Building configuration...
 
-Current configuration : 2831 bytes
+Current configuration : 2803 bytes
 !
-! Last configuration change at 18:38:00 UTC Thu Nov 26 2020 by haakonlab
+! No configuration change since last restart
 !
 version 12.2
 no service pad
@@ -594,7 +592,7 @@ line vty 5 15
  login local
  transport input ssh
 !
-ntp clock-period 36029229
+ntp clock-period 36029197
 ntp server 192.168.66.21
 end
 
