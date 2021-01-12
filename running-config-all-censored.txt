@@ -1,4 +1,4 @@
-------------------------------15/12/2020 23:52:00------------------------------
+------------------------------12/01/2021 20:17:26------------------------------
 
 
 
@@ -13,9 +13,10 @@
 ------------------------------lab-l3-switch-1:------------------------------
 Building configuration...
 
-Current configuration : 3164 bytes
+Current configuration : 8780 bytes
 !
-! No configuration change since last restart
+! Last configuration change at 19:13:19 UTC Tue Jan 12 2021
+! NVRAM config last updated at 19:13:38 UTC Tue Jan 12 2021
 !
 version 12.2
 no service pad
@@ -196,6 +197,78 @@ no ip http server
 no ip http secure-server
 !
 !
+banner login ^C
+OOOOOOOOOOOOOOOOOOOOOOO000000000000000000000000000000000000000000000000000000000
+00OOOOOOOOOOOOOOO000000000000000000000000000000000000000OOOO0OOOOOO0000000000000
+00OOkxxxxxkkkOO0000000000000000000000000000000000000000OkkkOOOkkkkOO000000000000
+00OxdollllloodxkO000000000000000000000000000000000000OOkxxkkkkkkxkkO000000000000
+0OkdlccccccllllodxOO00000000000000000000000000000000OkxddxxkkkkxxxkOO00000000000
+0Okoc::ccccllllccloxkO0000000000000000000000000000OOxdoodxkkkkxxxxxkO00000000000
+00koc:::ccclllllllclodxkOO00000000OOOOkOOO0KKKKK0OkdlllodxxkxxxxdxxkO00000000000
+00koc::cccccclloollccclldxxxkkkxxddodddxkO0KXXXXXXKOxdoodxxxxddddxxkOO0000000000
+0Okdlc:cccccccclllllc:::::cccccccllodxO0KKXXNNNNNNNXX0Okkxxddooddxkkkkxxxxxxxxdd
+dddolccc:::::::clllllc::::::cccloxO0KKXXXXXXXXNNNNNNXXKK0OkxoooddxkOkocccccccccc
+;:cloolcc:::::::cllllcccccccllodk0KKXXXXXXXXXXXXNNNNXXXKkdc::clddxkOOkxxxxxxxxxx
+dddxxddolc:::::cccllllllllcccldxkxddooodxk0KKXXXNNNNNXX0o;,'.':ldxkOOOOOkkkkkkkk
+kkkkkkkxolcc::::ccccllllcccclool:,'',,,'';lk0KXXNNNNNNNKx;'...,ldxkkOOOOOOOOOOOO
+OOOOOOkxxddolcc:::::clccccccllol:;,''..''';lOKXNNNNNNNNXKkoccldk00OxdxkOO00OOOOO
+OOOOOkkxxxxkxol::::cccccc:::coxOOOOkxdxxxkO0KXNNXXXKKKKK000KXXNNXK0kocldkOOOOOOO
+OOOOOOkkxxxkxdlccccccc:::;,,:lxk0KKKKXXXXXXNNNNNXKOxdddddxOKXXXXXXKOxolcoxOOOOOO
+OOOOOOkkkxxdddolccccc::;,'.';codxkkkOO00KKKKKKKXKKOxolcccok00OOOkkkxxdolloxOOOOO
+OOOOOOOOkxdl:;::c::::;,'..',;:ldddddddxxxxxxxxxkkkxxxoc:cloollcccllllllllodkOOOO
+OOOOOOOOOOxl;,,,;;;,,''...';:cooooollllllllllllllllccc:;;;;;;;;;::cccccclloxOOOO
+OOOOOOOOOOko:,'''''......';;:looollcccccccccc:::::::;;;;;;;;;;;::::::ccclldkOOOO
+OOOOOOOOOOkdl;'..........,;;:cloollcccccccccc:::::::::::::::::::::::::cclldkOOOO
+OOOOOOOOOOkxdc,.........';;::clolllcccccccccccccccccc:::::::::::::::::cccldkOOOO
+OOOOOOOOOOkkxo;'........';;::llllllccccccccccccccccccccccc::::::::::::ccldkOOOOO
+kkkkkkkkkkkkkdl,........,,,;:lllllllllccccccccccccccccccccc:::::::::::cloxkOOOOO
+kkkkkkkkkkkkkkdl,.......'',;cllllllllllcccccccccc::::ccccc:::::::::::ccoxkOOOOOO
+kkkkkkkkkkkkkkkxl,.......',:clllllllllllcccccccc::::::::::::;;;:::::cloxkkOOkkOO
+kkkkkkkkkkkkkkkkxc,.....';:clllllllllllllllccccc::::::::::::::::::ccloxkkkkkkkkO
+kkkkkkkkkkkOOOkkxoc;,',;:ccllllllllllllllllccccc::::::::::::::::cccloxkkkkkkkOOO
+kkkkkkkkkkkkOOOkxdolccccllllllloollllllllllcccccc:::::::::::::cccccloxkkOOOOOOkk
+OOOkkkkkkkkkOOOkxdoolllllloolloolllllllllllcccccccccccc::ccccccccclldxkkkOOkkkkk
+OOkkkkkkkkkOOOkxddooooooooooollllllllllllllccccccccccccccccccccccclldxkkkkkkkkkk
+OOOOOkkkkOOOOkkxdddooooooooollllllllllllllccccccccccccccccccccccclllodkkkkkkkkkO
+OOOOOOOOOOOOOkxxdddooooooooollllllllllllllllccccccccccccccccccccclllodxkkOOOOOOO
+kkOOOOOOOOOOkxxddddooooooooooooolllllllllllllcccccccccccccccccccccllodxkOOOOOOOO
+^C
+banner motd ^C
+OOOOOO000000000KK00KKKKKKKKKKKKKKKKKKKKKKKKKK0KKK00000000000OO00KKKKKK0000000000
+kxdxxxxkkO00000KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK00000OOOOOO00OOOO00KKKKKKK00000000
+doooooooodxkO00KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK0000kxxkkOOOOOOOOO000000KKK0000000
+lllllooooooodxk000KKKKKKKKKKKKKKKK00KKKKKKKKKKK0OxdddxkOOOOOkkkOO00000KK000000KK
+llllloooooooooodkOO00KKKKKKK0000OOOO0XXXXXNXXXXK0OkkxkkOOOOkkkkOO0000000K0K000KK
+lllllooooooddoooooddxkOOOkkkxxxxkO0KXNNNNNNNNNNNNNXK0OOkkkkkkkkOO0000000K0000KK0
+lllllllllloodooollcccllllooddkO0KXNNNNNNNNNNNNNNNNNXKkdollloxxkOO00OOOOOOO000000
+olllllllllloooooolcccclllodk0KK0000KXNNNNNNNNXXKKKKK00OkkxddxkOOOOOxoooloooooooo
+oollllllllllooooolllooooodxxxolccldOXNNNNNNXK0kxdddooodk0XXXXXXXK00Okkxxxxdddddd
+dddollllllllloooooooooooddoc::coxOKXNXXXKK0kxdoollcccccloxOKXXXNNXK00OOOOOOOOOOO
+kkkxdollllllllloooooooodxkkkO0KXXNXK0Okddoc:;,'''........,:loxk0KXK00OOO00OOOOOO
+OOOkkxddollllllllllllloxO0KXXXNXXKOxoc:,,'...             ...,:loxkkkkkO00000000
+OOOOkkkkkdolllllllllccoxO0KKKK0Okdl:,....                    ..',clodddxO0000000
+0OOOOkOOOkdollllllc::coxO0OOOkxdl;'..                          ..';cloodxO000000
+0OOOOOkkkxdoollllc:;;cdxkkkxxdoc,..                             ...,:llodxO00000
+0000OOkdllllllcc:;,;:ldxxxddol:'.      ....................      ...,:clodkO0000
+000000Odc:;::::;,,,;coddddool;'.    ................................';:looxO0000
+000000Oko:;,,,'''';clodddooc,..   ..................................';:looxO0000
+0000000kxl;,'....':codddool;.. .....................................';:looxO0000
+000000OOkd:,'....,:cooooolc;........................................';:looxO0000
+00000OOOOxl,'....;:clooollc;.......................................',;:looxk0000
+OOOOOOOOOkd:'....,:clooooolc,.....................................',;:clooxO0000
+OOOOOOOOOOOd:....';cloooooolc;,''..............................''',;:cllodkO0000
+OOOOOOOOOOOOd:'..':clooooooooc:;;,''''''...................''''',,;:cclloxO00000
+OOOOOOOOOOOOkd:,,;cloooooooooolcc:;,,,,,'''''...........'''',,,;;:ccllloxOOO0000
+OOOOOOOOOOOOOxolcllooooooooooooolcc::;;;;,,,,,''''''''''',,,;;:::ccclloxkOOOOOOO
+OOOOOOOOOOOOkxdooooooooooooooooolllccc:::::;;;,,,,,,,,,,,;;;:::cccclloxkOOOOOOOO
+OOOOOOOOOOOOkxddooooooooooooooooollllcccccc::::;;;;;;;;;;:::ccccccclodkOOOOOOOOO
+kkkkkkkkkOkkxxddooooooooooooooooolllllllllccccc::::::::::::ccccccclldkkkkkkkkkkk
+kkkkkkkkkkkxxdddoooooooooooooooolllllllllllcccccccc:::ccc::::cccccldxkkkkkkkkkkk
+kkkkkkkkkkxxdddoooooooooooooooolllllllllllcccccccc:::::::::::ccccloxkkkkkkkkkkkk
+kkkkkkkkkxxdddoooooooooooollllllllllllllllccccccc:::::::::cccccclloxxkkkkkkkkkkk
+kkkkkkkkxxddoooooooooooooollllllllllllllcccccccccc:::::::cccccccllodxxxxxxxxxxxx
+xxxxxxkxxdddoooooooooooooolllllllllllllcccccccccccccccccccccccccllodxxxxxxxxxxxx
+^C
 !
 line con 0
  logging synchronous
@@ -206,7 +279,7 @@ line vty 5 15
  login local
  transport input ssh
 !
-ntp clock-period 36029104
+ntp clock-period 36029074
 ntp server 192.168.66.1
 end
 
@@ -405,7 +478,7 @@ line vty 5 15
  login local
  transport input ssh
 !
-ntp clock-period 36029034
+ntp clock-period 36029035
 ntp server 192.168.66.20
 end
 
@@ -592,8 +665,195 @@ line vty 5 15
  login local
  transport input ssh
 !
-ntp clock-period 36029197
+ntp clock-period 36029201
 ntp server 192.168.66.21
+end
+
+ 
+ 
+
+
+------------------------------lab-l3-switch-4:------------------------------
+Building configuration...
+
+Current configuration : 2789 bytes
+!
+! No configuration change since last restart
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname ALE-KONT
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+!
+no aaa new-model
+system mtu routing 1500
+ip routing
+no ip domain-lookup
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+!
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+!
+interface FastEthernet0/14
+!
+interface FastEthernet0/15
+!
+interface FastEthernet0/16
+!
+interface FastEthernet0/17
+!
+interface FastEthernet0/18
+!
+interface FastEthernet0/19
+!
+interface FastEthernet0/20
+!
+interface FastEthernet0/21
+!
+interface FastEthernet0/22
+!
+interface FastEthernet0/23
+!
+interface FastEthernet0/24
+!
+interface FastEthernet0/25
+!
+interface FastEthernet0/26
+!
+interface FastEthernet0/27
+!
+interface FastEthernet0/28
+!
+interface FastEthernet0/29
+!
+interface FastEthernet0/30
+!
+interface FastEthernet0/31
+!
+interface FastEthernet0/32
+!
+interface FastEthernet0/33
+!
+interface FastEthernet0/34
+!
+interface FastEthernet0/35
+!
+interface FastEthernet0/36
+!
+interface FastEthernet0/37
+!
+interface FastEthernet0/38
+!
+interface FastEthernet0/39
+!
+interface FastEthernet0/40
+!
+interface FastEthernet0/41
+!
+interface FastEthernet0/42
+!
+interface FastEthernet0/43
+!
+interface FastEthernet0/44
+!
+interface FastEthernet0/45
+!
+interface FastEthernet0/46
+!
+interface FastEthernet0/47
+!
+interface FastEthernet0/48
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface GigabitEthernet0/3
+!
+interface GigabitEthernet0/4
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan555
+ ip address 83.118.72.5 255.255.255.240
+!
+interface Vlan666
+ description labmgmgtoob
+ ip address 192.168.66.23 255.255.255.0
+!
+router ospf 1
+ router-id 4.4.4.4
+ log-adjacency-changes
+ network 83.118.72.0 0.0.0.15 area 0
+!
+ip default-gateway 192.168.66.1
+ip classless
+ip route 192.168.0.0 255.255.0.0 192.168.66.1
+no ip http server
+no ip http secure-server
+!
+!
+!
+line con 0
+ logging synchronous
+line vty 0 4
+ login local
+ transport input ssh
+line vty 5 15
+ login local
+ transport input ssh
+!
+ntp clock-period 36029305
+ntp server 192.168.66.22
 end
 
  
